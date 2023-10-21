@@ -49,7 +49,8 @@ const SeedDB = {
       email: "ducdm.aptech@gmail.com",
       phone: "0974255602",
       bg: '/assets/images/bg.jpg',
-      bg_fb: '/assets/images/bg-fb.jpg'
+      bg_fb: '/assets/images/bg-fb.jpg',
+      srcAudio: '/assets/audio/EmDongYIDo-DucPhucx911-9034315.mp3'
     },
     female: {
       name: "Nguyễn Thị Hải Yến",

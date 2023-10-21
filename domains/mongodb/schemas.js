@@ -70,7 +70,8 @@ const DATA_CONFIG = new Schema({
         email: String,
         phone: String,
         bg: String,
-        bg_fb: String
+        bg_fb: String,
+        srcAudio: String
     },
     female: {
         name: String,

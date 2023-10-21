@@ -49,9 +49,9 @@
 <body>
 
 <div id="wrapper">
-    <audio id="myAudio" loop autoplay>
-        <source src="./../../public/assets/audio/EmDongYIDo-DucPhucx911-9034315.mp3">
-      </audio>
+    <audio controls loop id="myAudio" style="display: none;">
+        <source src="<%= data.cfg.male.srcAudio %>">
+    </audio>
     <div id="container">
 
         <section class="open-book">
@@ -153,7 +153,7 @@
                                         <%= data.cfg.male.time_start.time.minute %>"</span>
                             <div class="information-time">
                                 <span class="week vni">Ngày <%= data.cfg.male.time_start.date.day_of_week %></span>
-                                <span class="day btn"> <%= data.cfg.male.time_start.date.lunar.day %></span>
+                                <span class="day btn" id="btnDay"> <%= data.cfg.male.time_start.date.lunar.day %></span>
                                 <span class="month vni">Tháng  <%= data.cfg.male.time_start.date.lunar.month %></span>
                             </div>
                             <span class="detail-time">(Tức ngày <%= data.cfg.male.time_start.date.solar.day %>/
@@ -204,8 +204,16 @@
 
     </div>
 </div>
-
-
+<script>
+    var count = 0;
+    var myAudio = document.getElementById('myAudio');
+    document.addEventListener("click", function() {
+        if (!count) {
+            myAudio.play();
+            count++;
+        }
+    })
+</script>
 <!-- END wrapper -->
 <!-- jQuery  -->
 <script src="/assets/js/jquery.min.js"></script>
