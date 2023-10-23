@@ -33,7 +33,7 @@ const SeedDB = {
           }
         },
         time: {
-          hour: "15",
+          hour: "16",
           minute: "00"
         }
       },
