@@ -61,6 +61,22 @@ const DATA_CONFIG = new Schema({
                     year: String
                 }
             },
+            date_party: {
+                lunar: {
+                    day: String,
+                    month: String,
+                    year: String
+                },
+                solar: {
+                    day: String,
+                    month: String,
+                    year: String
+                },
+                time: {
+                    hour: String,
+                    minute: String
+                }
+            },
             time: {
                 hour: String,
                 minute: String
@@ -94,6 +110,22 @@ const DATA_CONFIG = new Schema({
                     day: String,
                     month: String,
                     year: String
+                }
+            },
+            date_party: {
+                lunar: {
+                    day: String,
+                    month: String,
+                    year: String
+                },
+                solar: {
+                    day: String,
+                    month: String,
+                    year: String
+                },
+                time: {
+                    hour: String,
+                    minute: String
                 }
             },
             time: {

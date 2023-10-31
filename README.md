@@ -10,7 +10,7 @@
 <br />
 <p align="center">
   <a href="https://wedding-yen-duc.onrender.com">
-    <img src="https://wedding-yen-duc.onrender.com/assets/images/bg.jpg" alt="Logo" width="80" height="80">
+    <img src="https://wedding-yen-duc.onrender.com/assets/images/bg1.jpg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Wedding Invitation Template</h3>

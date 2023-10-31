@@ -63,7 +63,7 @@
 
                     <div class="share-buttons">
                         <a style="padding-top: 5px"
-                           href="<%= data.cfg.male.location.map %>"
+                           href="<%= data.cfg.female.location.map %>"
                            target="_blank">
                             <div class="share-button">
                                 <div class="share-button-secondary">
@@ -97,10 +97,10 @@
                     <div class="wrap-card-welcome">
 
                         <div class="card-welcome-header">
-                            <div class="card-welcome-text vni">
+                            <div class="card-welcome-text vni" style="position: absolute;left: 18px;top: 100px;">
                                 Wedding
                             </div>
-                            <div class="card-welcome-date">
+                            <div class="card-welcome-date" style="position: absolute;left: 50px;top: 170px;">
                                 <%= data.cfg.male.time_start.date.lunar.day %>
                                 -
                                 <%= data.cfg.male.time_start.date.lunar.month %>
@@ -109,10 +109,39 @@
                             </div>
 
                         </div>
+                        <div class="card-party">
+                            <div class="card-header-invite" id="card-header-invite" style="font-size: 15px;position: absolute;bottom: 10px;">
+                                <div class="card-header-text">
+                                    Trân trọng kính mời
+                                </div>
+                                <div class="card-header-inviter name vni">
+                                    <%= (data.mode == 2 ? data.invitee.name : "Bạn và gia đình") %>
+                                </div>
+                                <div class="card-header-inviter">
+                                    Tới dự bữa cơm thân mật của 2 <%= (data.mode == 2 ? data.invitee.level : "....") %>
+                                    chúng tôi
+                                </div>
+                                <div class="card-information">
+                                    <span style="padding-top: 10px">vào hồi <%= data.cfg.male.time_start.date_party.time.hour %> giờ
+                                        <%= data.cfg.male.time_start.date_party.time.minute %>"</span>
+                                    <div class="information-time">
+                                        <span class="week vni">Ngày</span>
+                                        <span class="day btn" id="btnDay"><%= data.cfg.male.time_start.date_party.lunar.day %></span>
+                                        <span class="month vni">Tháng  <%= data.cfg.male.time_start.date_party.lunar.month %></span>
+                                    </div>
+                                    <span class="detail-time">(Tức ngày <%= data.cfg.male.time_start.date_party.solar.day %>/
+                                                <%= data.cfg.male.time_start.date_party.solar.month %> âm lịch)</span>
+                                    <div style="padding-top:10px">Tại tư gia nhà Trai</div>
+                                    <div class="address">
+                                        <%= data.cfg.male.location.text %>
+                                    </div>
 
-                        <div class="card-welcome-invite-name vni">
-                            <%= (data.mode == 2 ? "Kính mời: " + data.invitee.name : "Kính mời ....................") %>
+                                </div>
+                            </div>
                         </div>
+                        <!-- <div class="card-welcome-invite-name vni">
+                            <%= (data.mode == 2 ? "Kính mời: " + data.invitee.name : "Kính mời ....................") %>
+                        </div> -->
                     </div>
 
                 </div>
@@ -128,15 +157,14 @@
                     <div class="card-wrap">
 
                         <div class="card-header-invite">
-                            <div class="card-header-text">
+                            <!-- <div class="card-header-text">
                                 Trân trọng kính mời
-                            </div>
-                            <div class="card-header-inviter name vni">
+                            </div> -->
+                            <!-- <div class="card-header-inviter name vni">
                                 <%= (data.mode == 2 ? data.invitee.name : "Bạn và gia đình") %>
-                            </div>
+                            </div> -->
                             <div class="card-header-inviter">
-                                Tới dự bữa cơm thân mật của 2 <%= (data.mode == 2 ? data.invitee.level : "....") %>
-                                chúng tôi
+                                LỄ THÀNH HÔN
                             </div>
                         </div>
                         <div class="card-header-name">
@@ -149,7 +177,7 @@
                             </div>
                         </div>
                         <div class="card-information">
-                                    <span style="padding-top: 10px">Bữa cơm thân mật được tổ chức vào hồi <%= data.cfg.male.time_start.time.hour %> giờ
+                                    <span style="padding-top: 10px">Được tổ chức vào hồi <%= data.cfg.male.time_start.time.hour %> giờ
                                         <%= data.cfg.male.time_start.time.minute %>"</span>
                             <div class="information-time">
                                 <span class="week vni">Ngày <%= data.cfg.male.time_start.date.day_of_week %></span>
@@ -158,7 +186,7 @@
                             </div>
                             <span class="detail-time">(Tức ngày <%= data.cfg.male.time_start.date.solar.day %>/
                                         <%= data.cfg.male.time_start.date.solar.month %> âm lịch)</span>
-                            <div style="padding-top:10px">Tại tư gia Nhà Trai</div>
+                            <div style="padding-top:10px">Tại tư gia nhà Trai</div>
                             <div class="address">
                                 <%= data.cfg.male.location.text %>
                             </div>

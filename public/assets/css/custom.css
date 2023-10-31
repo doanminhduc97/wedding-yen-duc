@@ -147,3 +147,13 @@
     cursor: pointer;
 }
 
+@media (max-width: 739px) {
+    #card-header-invite {
+        left: 11% !important;
+    }
+}
+
+#card-header-invite {
+    left: 17.5%;
+}
+

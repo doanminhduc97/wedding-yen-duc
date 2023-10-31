@@ -21,19 +21,36 @@ const SeedDB = {
       time_start: {
         date: {
           lunar: {
-            day: "02",
+            day: "03",
             month: "12",
             year: "2023"
           },
           day_of_week: "chủ nhật",
           solar: {
-            day: "20",
+            day: "21",
             month: "10",
             year: "2023"
           }
         },
+        date_party: {
+          lunar: {
+            day: "02",
+            month: "12",
+            year: "2023"
+          },
+          day_of_week: "thứ bảy",
+          solar: {
+            day: "20",
+            month: "10",
+            year: "2023"
+          },
+          time: {
+            hour: "16",
+            minute: "00"
+          }
+        },
         time: {
-          hour: "16",
+          hour: "10",
           minute: "00"
         }
       },
@@ -48,7 +65,7 @@ const SeedDB = {
       }],
       email: "ducdm.aptech@gmail.com",
       phone: "0974255602",
-      bg: '/assets/images/bg.jpg',
+      bg: '/assets/images/bg1.jpg',
       bg_fb: '/assets/images/bg-fb.jpg',
       srcAudio: '/assets/audio/EmDongYIDo-DucPhucx911-9034315.mp3'
     },
@@ -59,21 +76,38 @@ const SeedDB = {
         mother: "Nguyễn Thị Mơ"
       },
       location: {
-        text: "Phú Túc - Phú Xuyên - Hà Nội",
+        text: "Lưu Đông - Phú Túc - Phú Xuyên - Hà Nội",
         map: "https://maps.app.goo.gl/M8J8D67kCQrg1VWd9"
       },
       time_start: {
         date: {
           lunar: {
-            day: "02",
+            day: "03",
             month: "12",
             year: "2023"
           },
           day_of_week: "chủ nhật",
           solar: {
+            day: "21",
+            month: "10",
+            year: "2023"
+          }
+        },
+        date_party: {
+          lunar: {
+            day: "02",
+            month: "12",
+            year: "2023"
+          },
+          day_of_week: "thứ bảy",
+          solar: {
             day: "20",
             month: "10",
             year: "2023"
+          },
+          time: {
+            hour: "16",
+            minute: "00"
           }
         },
         time: {
@@ -88,7 +122,7 @@ const SeedDB = {
       }],
       email: "nguyenthihaiyen120997@gmail.com",
       phone: "0338039998",
-      bg: '/assets/images/bg.jpg',
+      bg: '/assets/images/bg1.jpg',
       bg_fb: '/assets/images/bg-fb.jpg'
     },
     default: true
