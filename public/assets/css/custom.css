@@ -149,11 +149,17 @@
 
 @media (max-width: 739px) {
     #card-header-invite {
-        left: 12% !important;
+        left: 6% !important;
+    }
+    #notPerson {
+        left: 10.5% !important;
     }
 }
 
 #card-header-invite {
-    left: 17.5%;
+    left: 12%;
 }
 
+#notPerson {
+    left: 17.7%;
+}

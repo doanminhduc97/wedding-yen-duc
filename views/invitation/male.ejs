@@ -110,7 +110,11 @@
 
                         </div>
                         <div class="card-party">
+                            <% if (data.mode == 2) { %>
                             <div class="card-header-invite" id="card-header-invite" style="font-size: 15px;position: absolute;bottom: 10px;">
+                            <% } else { %>
+                                <div class="card-header-invite" id="notPerson" style="font-size: 15px;position: absolute;bottom: 10px;">
+                            <% } %>
                                 <div class="card-header-text">
                                     Trân trọng kính mời
                                 </div>
